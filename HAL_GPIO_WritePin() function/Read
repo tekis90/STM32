@@ -1,1 +1,38 @@
 
+ENG:
+The HAL_GPIO_WritePin() function is one of the fundamental functions of the HAL (Hardware Abstraction Layer) library, which is commonly used in STM32 microcontrollers. This function is used to change the output state (HIGH or LOW) of a specified GPIO pin.
+
+void HAL_GPIO_WritePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+
+Parameters:
+GPIOx
+The GPIO port: such as GPIOA, GPIOB, GPIOC, etc. You should specify the port you are using.
+
+GPIO_Pin
+The specific pin you want to use must be specified in the function. For example: GPIO_PIN_0, GPIO_PIN_1, ..., GPIO_PIN_15.
+
+PinState
+The logical value to be written to the pin. It can be one of the following two constants:
+
+GPIO_PIN_SET → 1 (HIGH)
+
+GPIO_PIN_RESET → 0 (LOW)
+
+TR:
+
+HAL_GPIO_WritePin() fonksiyonu, STM32 mikrodenetleyicilerinde sıklıkla kullanılan HAL (Hardware Abstraction Layer) kütüphanesinin temel fonksiyonlarından biridir. Bu fonksiyon yardımıyla istenilen bir GPIO pininin çıkış durumu (HIGH veya LOW) değiştirilir.
+
+void HAL_GPIO_WritePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+
+GPIOx
+GPIO portu: GPIOA, GPIOB, GPIOC, ... gibi. Hangi portu kullanıyorsak onu belirtmeliyiz.
+
+GPIO_Pin
+Hangi pini kullanılacağımızı fonksiyona belirtmeliyiz. Örneğin: GPIO_PIN_0, GPIO_PIN_1, ..., GPIO_PIN_15.
+
+PinState
+Pine yazılacak lojik değer. Bu iki sabitten biri olabilir:
+
+GPIO_PIN_SET → 1 (HIGH)
+
+GPIO_PIN_RESET → 0 (LOW)
